@@ -490,11 +490,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mx-2\.5 {
   margin-left: 0.625rem;
   margin-right: 0.625rem;
@@ -503,6 +498,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mt-4 {
@@ -525,6 +525,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -541,28 +545,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
 
 .ml-10 {
   margin-left: 2.5rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
 }
 
 .flex {
@@ -577,40 +565,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-5\/6 {
-  height: 83.333333%;
+.h-1\/6 {
+  height: 16.666667%;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.h-1\/6 {
-  height: 16.666667%;
-}
-
 .w-5\/6 {
   width: 83.333333%;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
-}
-
-.w-24 {
-  width: 6rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-1\/4 {
-  width: 25%;
 }
 
 .max-w-screen-lg {
@@ -678,14 +642,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(250 89 89 / var(--tw-bg-opacity));
 }
 
-.bg-bookmark-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
-}
-
 .bg-cyan-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(236 254 255 / var(--tw-bg-opacity));
+}
+
+.bg-bookmark-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70 {
@@ -716,6 +680,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -724,21 +693,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -824,6 +778,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
+[hidden] {
+  display: none;
+}
+
 .hover\:bg-bookmark-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
@@ -835,25 +793,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
-  .sm\:mx-2\.5 {
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
-  }
-
-  .sm\:mx-2 {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-
-  .sm\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .sm\:mt-12 {
-    margin-top: 3rem;
-  }
-
   .sm\:mt-6 {
     margin-top: 1.5rem;
   }
@@ -894,8 +833,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
-  .lg\:mt-28 {
-    margin-top: 7rem;
+  .lg\:mt-14 {
+    margin-top: 3.5rem;
   }
 
   .lg\:mb-0 {
@@ -904,14 +843,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:mt-60 {
     margin-top: 15rem;
-  }
-
-  .lg\:mt-14 {
-    margin-top: 3.5rem;
-  }
-
-  .lg\:mt-20 {
-    margin-top: 5rem;
   }
 
   .lg\:h-screen {
