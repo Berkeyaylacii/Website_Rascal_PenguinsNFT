@@ -15,11 +15,11 @@
         <nav class ="container flex items-center py-4 mt-4 sm:mt-6">
             <div class="py-1"> <img src="imgs/Group 1.svg" class="" alt=""/> </div>
               <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-s">
-                <li class="cursor-pointer">Home</li>
-                <li class="cursor-pointer">About</li>
-                <li class="cursor-pointer">Roadmap</li>
-                <li class="cursor-pointer">Team</li>
-                <li class="cursor-pointer">FAQ</li>
+                <li class="cursor-pointer"> <a href="#home" >Home </a></li>
+                <li class="cursor-pointer"> <a href="#about"> About </a></li>
+                <li class="cursor-pointer"> <a href="#roadmap" >Roadmap</a></li>
+                <li class="cursor-pointer"> <a href="#team" >Team</a></li>
+                <li class="cursor-pointer"> <a href="#faq">FAQ</a></li>
                 <button type="button" id="connectButton" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase hover:bg-bookmark-white hover:text-black">Connect Wallet</button>
               </ul>
               <div class="flex sm:hidden flex-1 justify-end">
@@ -29,7 +29,7 @@
    </header>
 
    <!-- Hero-->
-   <section class="relative">
+   <section id="about" class="relative">
      <div data-aos="fade-right" class=" container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-14 bg-cyan-50 bg-opacity-70 py-10 rounded-xl ">
         <!-- Content-->
         <div class="flex flex-1 flex-col items-center lg:items-start" >
@@ -63,20 +63,22 @@
        <img class="mx-2.5" src="imgs/discord.png">
      </div>
 
-
    </section>
 
    <!--About-->
-   <section class="bg-bookmark-white h-screen py-20 mt-20 lg:mt-60" >
+   <section id="about" class="bg-bookmark-white h-screen py-20 mt-20 lg:mt-60" >
      <!--Heading-->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
         <h1 class="text-3xl text-center text-bookmark blue">About</h1>
         <p class="text-center text-bookmark-grey mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tincidunt orci, ac sodales risus congue a. Nulla sit amet nibh sed nulla fermentum lacinia. Etiam tincidunt quam ipsum, malesuada pharetra sem sagittis eu. Sed orci lorem, interdum non lacus a, imperdiet tincidunt sem. Donec sagittis dignissim nibh a feugiat. Curabitur vitae velit ultrices, interdum ligula in, pretium mi. Cras et egestas nibh, varius ornare dui.</p>
       </div>
+      <div class="flex justify-center flex-1 ">
+        <img class="mt-10" src="imgs/icebergg.svg">
+      </div>
    </section>
 
     <!--Roadmap-->
-    <section class=" h-screen py-20 " >
+    <section id="roadmap" class=" h-screen py-20 " >
         <!--Heading-->
          <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
           <h1 class="text-3xl text-center text-bookmark blue">Roadmap</h1>
@@ -85,7 +87,7 @@
     </section>
 
     <!--Team-->
-    <section  class="lg:h-screen bg-bookmark-white py-20 " >
+    <section id="team" class="lg:h-screen bg-bookmark-white py-20 " >
       <div data-aos="fade-up">
       <!--Heading-->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
@@ -122,7 +124,7 @@
     </section>
 
     <!--FAQ-->
-    <section  class=" h-screen py-20 ">
+    <section id="faq" class=" h-screen py-20 ">
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2 bg-cyan-50 bg-opacity-70 py-10 rounded-xl" data-aos="fade-up">
         <!--Heading-->
         <h1 class="text-3xl text-center text-bookmark-blue mb-12">FAQ</h1>
