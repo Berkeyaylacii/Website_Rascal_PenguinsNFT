@@ -529,8 +529,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mt-10 {
@@ -571,10 +571,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-1\/6 {
   height: 16.666667%;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-5\/6 {
@@ -649,11 +645,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-cyan-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(236 254 255 / var(--tw-bg-opacity));
-}
-
-.bg-bookmark-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70 {
@@ -790,6 +781,47 @@ html {
   scroll-behavior: smooth;
 }
 
+.floating {
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    transform: translate(0,  0px);
+  }
+
+  50%  {
+    transform: translate(0, 15px);
+  }
+
+  100%   {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0,  0px);
+  }
+
+  50%  {
+    transform: translate(0, 15px);
+  }
+
+  100%   {
+    transform: translate(0, -0px);
+  }
+}
+
 .hover\:bg-bookmark-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
@@ -847,14 +879,6 @@ html {
 
   .lg\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .lg\:mt-60 {
-    margin-top: 15rem;
-  }
-
-  .lg\:h-screen {
-    height: 100vh;
   }
 
   .lg\:w-5\/12 {

@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body class="font-Poppins">
+<body class="font-Poppins" style="background: url(./imgs/webBG.png); background-size: 100% 100%; background-repeat: no-repeat" >
    <!-- Header -->
    <header>
         <nav class ="container flex items-center py-4 mt-4 sm:mt-6">
-            <div class="py-1"> <img src="imgs/Group 1.svg" class="" alt=""/> </div>
+            <div class="py-1 sm:"> <img src="imgs/peng.png" class="" alt=""/> </div>
               <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-s">
                 <li class="cursor-pointer"> <a href="#home" >Home </a></li>
                 <li class="cursor-pointer"> <a href="#about"> About </a></li>
@@ -22,15 +22,15 @@
                 <li class="cursor-pointer"> <a href="#faq">FAQ</a></li>
                 <button type="button" id="connectButton" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase hover:bg-bookmark-white hover:text-black">Connect Wallet</button>
               </ul>
-              <div class="flex sm:hidden flex-1 justify-end">
-                <i class=" text-2xl fas fa-bars"></i>
-              </div>
+                <div class="flex sm:hidden flex-1 justify-end">
+                  <i class=" text-2xl fas fa-bars"></i>
+                </div>
         </nav>
    </header>
 
    <!-- Hero-->
-   <section id="about" class="relative">
-     <div data-aos="fade-right" class=" container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-14 bg-cyan-50 bg-opacity-70 py-10 rounded-xl ">
+   <section class="relative mb-12">
+     <div data-aos="fade-right" class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-14  py-10 ">
         <!-- Content-->
         <div class="flex flex-1 flex-col items-center lg:items-start" >
             <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
@@ -39,6 +39,7 @@
             <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
               5000 randomly generated penguins living in a South Poleverse. They created for one thing. To eat and survive. The ones with the better luck will be able to live.
             </p>
+   
             <!--Wallet info-->
             <section id="wallet_info" hidden>
               <h1 class="mb-3 text-xl">Address: <span id="wallet_address"></span></h1>
@@ -48,62 +49,67 @@
             <h1 class="mb-3 text-xl">Total Minted: 0 / 5000</h1>
             <h1 class="mb-3 text-xl">Mint Price: 0.03</h1>
             <div class="flex justify-center flex-wrap gap-6">
-              
               <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">Mint</button>
-            </div>
+            </div> 
         </div>
         <!--Gif-->
-        <div class="flex justify-center flex-1  mb-10 md:mb-16 lg:mb-0 z-10 " > 
-          <img class="w-5/6 h-1/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/logo.jpg">
+        <div class="flex justify-center flex-1  mb-10 md:mb-16 lg:mb-0 z-10 relative" > 
+          <img class="w-5/6 h-1/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full absolute" src="./imgs/framedgif.png"> 
         </div>
      </div>
-
-  <div class="justify-center flex mt-12" >
+     <!--socials-->
+    <div class="justify-center flex mt-14" >
        <img class="mx-2.5" src="imgs/twitter.png">
        <img class="mx-2.5" src="imgs/discord.png">
-     </div>
-
+    </div>
    </section>
+
 
    <!--About-->
-   <section id="about" class="bg-bookmark-white h-screen py-20 mt-20 lg:mt-60" >
+   <section id="about" class="relative py-10 " >
+     
+    <div class="container">
      <!--Heading-->
-      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 class="text-3xl text-center text-bookmark blue">About</h1>
-        <p class="text-center text-bookmark-grey mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tincidunt orci, ac sodales risus congue a. Nulla sit amet nibh sed nulla fermentum lacinia. Etiam tincidunt quam ipsum, malesuada pharetra sem sagittis eu. Sed orci lorem, interdum non lacus a, imperdiet tincidunt sem. Donec sagittis dignissim nibh a feugiat. Curabitur vitae velit ultrices, interdum ligula in, pretium mi. Cras et egestas nibh, varius ornare dui.</p>
-      </div>
-      <div class="flex justify-center flex-1 ">
-        <img class="mt-10" src="imgs/icebergg.svg">
-      </div>
+    <div class="text-center sm:w-3/4 lg:w-5/12 mx-auto px-2">
+      <p>5000 randomly generated penguins living in a South Poleverse. They created for one thing. To eat and survive. They created for one thing. To eat and survive.They created for one thing. To eat and survive.The ones with the better luck will be able to live.</p>
+    </div>
+    
+    <div class="container relative ">
+      <img class="floating relative" src="imgs/icebergg.svg"> 
+    </div>  
+
+  </div>
+
    </section>
 
+
     <!--Roadmap-->
-    <section id="roadmap" class=" h-screen py-20 " >
+    <section id="roadmap" class="relative py-20 lg:mt-60" >
+      <div class="container">
         <!--Heading-->
          <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-          <h1 class="text-3xl text-center text-bookmark blue">Roadmap</h1>
-           <p class="text-center text-bookmark-grey mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tincidunt orci, ac sodales risus congue a. Nulla sit amet nibh sed nulla fermentum lacinia. Etiam tincidunt quam ipsum, malesuada pharetra sem sagittis eu. Sed orci lorem, interdum non lacus a, imperdiet tincidunt sem. Donec sagittis dignissim nibh a feugiat. Curabitur vitae velit ultrices, interdum ligula in, pretium mi. Cras et egestas nibh, varius ornare dui.</p>
+          <h1 class="text-3xl text-center text-white">Roadmap</h1>
+           <p class="text-center text-white mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tincidunt orci, ac sodales risus congue a. Nulla sit amet nibh sed nulla fermentum lacinia. Etiam tincidunt quam ipsum, malesuada pharetra sem sagittis eu. Sed orci lorem, interdum non lacus a, imperdiet tincidunt sem. Donec sagittis dignissim nibh a feugiat. Curabitur vitae velit ultrices, interdum ligula in, pretium mi. Cras et egestas nibh, varius ornare dui.</p>
          </div>
+      </div>   
     </section>
 
     <!--Team-->
-    <section id="team" class="lg:h-screen bg-bookmark-white py-20 " >
-      <div data-aos="fade-up">
+    <section id="team" class="relative py-20 text-white >
+      <div data-aos="fade-up" >
       <!--Heading-->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 class="text-3xl text-center text-bookmark-blue">Team</h1>
+        <h1 class="text-3xl text-center text-white">Team</h1>
        </div>
-       
        <!--Cards-->
        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg mt-16"> 
           <!--Card1-->
           <div class="flex flex-col rounded-md shadow-md">
             <div class="p-6 flex flex-col items-center">
-                <img src="./imgs/team-card1.svg" alt="">
+                <img src="./imgs/team-card1.svg" alt="" class="w-5/6 h-1/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full">
                 <h3 class="mt-2 mb-2 text-bookmark-blue text-lg">Lympid</h3>
             </div>
           </div>
-
           <!--Card2-->
           <div class="flex flex-col rounded-md shadow-md">
             <div class="p-6 flex flex-col items-center">
@@ -111,7 +117,6 @@
                 <h3 class="mt-2 mb-2 text-bookmark-blue text-lg">OsmanC</h3>
             </div>
           </div>
-
           <!--Card3-->
             <div class="flex flex-col rounded-md shadow-md">
               <div class="p-6 flex flex-col items-center">
@@ -124,26 +129,28 @@
     </section>
 
     <!--FAQ-->
-    <section id="faq" class=" h-screen py-20 ">
-      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2 bg-cyan-50 bg-opacity-70 py-10 rounded-xl" data-aos="fade-up">
+    <section id="faq" class="relative py-20 ">
+      <div class="container sm:w-3/4 lg:w-5/12 mx-auto px-2 py-10 rounded-xl" data-aos="fade-up">
         <!--Heading-->
-        <h1 class="text-3xl text-center text-bookmark-blue mb-12">FAQ</h1>
+        <h1 class="text-3xl text-center text-white mb-12">FAQ</h1>
         <!--Q1-->
         <div class="ml-10">
           <div class="mb-6">
-            <h1 class="text-3xl ">What is the total supply?</h2>
-            <p>-Total supply will be 5000.</p>
+            <h1 class="text-3xl text-white">What is the total supply?</h2>
+            <p class="text-white">-Total supply will be 5000.</p>
           </div>
         
         <!--Q2-->
           <div class="mb-6">
-            <h1 class="text-3xl">What is the mint price?</h2>
-            <p>-Mint price will be 0.03 ethereum.</p>
+            <h1 class="text-3xl text-white">What is the mint price?</h2>
+            <p class="text-white">-Mint price will be 0.03 ethereum.</p>
           </div>
         </div>
 
       </div>
+      
     </section>
+
 
 <!--for connecting wallet-->
 <script src="index.js"></script>
