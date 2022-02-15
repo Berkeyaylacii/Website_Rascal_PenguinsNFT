@@ -14,12 +14,14 @@ module.exports = {
       },
     },
     fontFamily: {
-      Poppins: ["Poppins, sans-serif"],
+      Antonio: "'Antonio', sans-serif",
+      Yanone:  "'Yanone Kaffeesatz', sans-serif",
     },
     container: {
         center: true,
         padding: "1rem",
         screens: {
+          sm:"860px",
           lg: "1124px",
           xl: "1124px",
           "2xl": "1124px",

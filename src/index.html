@@ -7,14 +7,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--animation on scroll-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
 
 </head>
-<body class="font-Antonio" style="background: url(./imgs/bgg.png); background-size: 100% 100%; background-repeat: no-repeat" >
+<body class="font-Yanone" style="background: url(./imgs/bgg.png); background-size: 100% 100%; background-repeat: no-repeat" >
    <!-- Header -->
    <header>
         <nav class ="container flex items-center py-4 mt-4 sm:mt-6">
-            <div class="py-1 sm:"> <img src="imgs/headerlogo.png" class="" alt=""/> </div>
-              <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-s">
+            <div class="py-1 "> <img src="imgs/headerlogo.png" class="" alt=""/> </div>
+              <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xl">
                 <li class="cursor-pointer"> <a href="#home" >Home </a></li>
                 <li class="cursor-pointer"> <a href="#about"> About </a></li>
                 <li class="cursor-pointer"> <a href="#roadmap" >Roadmap</a></li>
@@ -22,8 +27,17 @@
                 <li class="cursor-pointer"> <a href="#faq">FAQ</a></li>
                 <button type="button" id="connectButton" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase hover:bg-bookmark-white hover:text-black">Connect Wallet</button>
               </ul>
-                <div class="flex sm:hidden flex-1 justify-end">
-                  <i class=" text-2xl fas fa-bars"></i>
+                <div class="w-96 mt-2 flex sm:hidden flex-1 justify-end">
+                  <i id="dropdownButton" class=" text-2xl fas fa-bars"></i>
+                  <div class="bg-white rounded-lg py-1" >
+                    <ul id="dropdownMenu" class="mt-5">
+                      <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#home" >Home </a></li>
+                      <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#about"> About </a></li>
+                      <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#roadmap" >Roadmap</a></li>
+                      <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#team" >Team</a></li>
+                     <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#faq">FAQ</a></li>
+                    </ul>
+                    </div>
                 </div>
         </nav>
    </header>
@@ -32,10 +46,10 @@
    <section class="relative mb-12">
      <div data-aos="fade-right" class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-14  py-10 ">
         <!-- Content-->
-        <div class="flex flex-1 flex-col items-center lg:items-start" >
-            <h2 class=" text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
+        <div class="flex flex-1 flex-col items-center lg:items-start " >
+            <h1 class="font-bold text-bookmark-blue text-4xl md:text-6xl lg:text-7xl text-center lg:text-left mb-6">
               Rascal Penguins
-            </h2>
+            </h1>
             <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
               5000 randomly generated penguins living in a South Poleverse. They created for one thing. To eat and survive. The ones with the better luck will be able to live.
             </p>
@@ -70,47 +84,46 @@
      
     <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
      <!--Heading-->
-    <div class="relative mx-auto text-center w-54 lg:w-full mb-3 z-10">
-      <h1 class="text-center font-bold" >What is Rascal Penguins?</h1>
-      <p>5010 randomly generated penguins living in a South Poleverse. They created for one thing. To eat and survive. They created for one thing. To eat and survive.They created for one thing. To eat and survive.The ones with the better luck will be able to live.</p>
+    <div class="relative mx-auto text-center w-54 lg:w-full mb-0 z-10 ">
+      <h1 class="text-4xl text-center font-bold mb-1" >What is Rascal Penguins?</h2>
+      <p class="text-xl">5010 randomly generated penguins living in a South Poleverse. They created for one thing. To eat and survive. They created for one thing. To eat and survive.They created for one thing. To eat and survive.The ones with the better luck will be able to live.</p>
     </div>
     
     <!--Iceberg-->
-    <div class="flex justify-center items-center">
+    <div class="hidden sm:flex relative justify-center items-center">
       <img class="floating " src="imgs/iceberg.svg"> 
     </div>
 
-  <div class="relative h-14 m-14 bg-transparent">
+    <div class="  mt-32 bg-transparent">
 
-  </div>  
-
-    <div class="absolute top-1/4 right-auto lg:right-1/2 mx-4 lg:mx-40 w-54 lg:w-72  text-white">
-      <h1 class="text-center text-white font-bold">Roadmap 1</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    <div class="relative sm:absolute bottom-1/2 right-auto sm:right-1/2  w-54 sm:w-80 text-2xl text-white">
+      <h1 class="text-5xl text-sky-100 text-center  font-extrabold">Roadmap 1</h1>
+      <p class="font-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
     </div>
 
-    <div class="absolute top-1/3 lg: left-auto lg:left-1/2 mx-4 lg:mx-32 w-54 lg:w-72 text-l text-white">
-        <h1 class="text-center text-white font-bold" >Roadmap 2</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    <div class="relative sm:absolute bottom-1/3 left-auto sm:left-1/2  w-54 sm:w-80 text-2xl text-white">
+        <h1 class="text-4xl text-center text-sky-400 font-extrabold" >Roadmap 2</h1>
+        <p class="font-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
     </div>
 
-    <div class="absolute top-1/2 right-auto lg:right-1/2 mx-4 lg:mx-32 w-54 lg:w-72 text-l text-white">
-      <h1 class="text-center text-white font-bold">Roadmap 3</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    <div class="relative sm:absolute sm:bottom-72 right-auto sm:right-1/2 w-54 sm:w-80 text-2xl text-white">
+      <h1 class="text-3xl text-center text-sky-500 font-extrabold">Roadmap 3</h1>
+      <p class="font-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
     </div>
 
-    <div class="absolute bottom-1/4 bottom-2/7 left-auto lg:left-1/2 mx-4 lg:mx-32 w-54 lg:w-72 text-l text-white">
-      <h1 class="text-center text-white font-bold">Roadmap 4</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    <div class="relative sm:absolute -bottom-12 left-auto sm:left-1/2 w-54 sm:w-80 text-2xl text-white">
+      <h1 class="text-2xl text-center text-sky-600 font-extrabold">Roadmap 4</h1>
+      <p class="font-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
     </div>
-
+    
+    </div> 
   </div>
 
    </section>
 
 
     <!--Team-->
-    <section id="team" class="relative py-5 text-white >
+    <section id="team" class="relative mt-32 py-5 text-white >
       <div data-aos="fade-up" >
       <!--Heading-->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
@@ -133,6 +146,20 @@
             </div>
           </div>
           <!--Card3-->
+            <div class="flex flex-col rounded-md shadow-md">
+              <div class="p-6 flex flex-col items-center">
+                  <img src="./imgs/team-card1.svg" alt="">
+                  <h3 class="mt-2 mb-2 text-bookmark-blue text-lg">Tugberk</h3>
+              </div>
+            </div>
+              <!--Card3-->
+              <div class="flex flex-col rounded-md shadow-md">
+                <div class="p-6 flex flex-col items-center">
+                    <img src="./imgs/team-card1.svg" alt="">
+                    <h3 class="mt-2 mb-2 text-bookmark-blue text-lg">Tugberk</h3>
+                </div>
+              </div>
+                <!--Card3-->
             <div class="flex flex-col rounded-md shadow-md">
               <div class="p-6 flex flex-col items-center">
                   <img src="./imgs/team-card1.svg" alt="">
