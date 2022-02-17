@@ -21,12 +21,22 @@ module.exports = {
         center: true,
         padding: "1rem",
         screens: {
-          sm:"860px",
           lg: "1124px",
           xl: "1124px",
           "2xl": "1124px",
         }
     },
+    screens: {
+      'sm': '880px',
+
+      'md': '768px',
+
+      'lg': '1024px',
+
+      'xl': '1280px',
+
+      '2xl': '1536px',
+    }
   },
   plugins: [],
 }
