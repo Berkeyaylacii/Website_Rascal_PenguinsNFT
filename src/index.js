@@ -1,9 +1,10 @@
-const mobileMenu = document.getElementById("dropdownMenu");
-const mobileMenuBtn = document.getElementById("dropdownButton");
+const mobileMenuBtn = document.querySelector("button.mobile-menu-button");
+const mobileMenu = document.querySelector(".mobile-menu");
 
-mobileMenuBtn.addEventListener('click', () => {
-    mobileMenuBtn.classList.toggle('hidden');
-})
+
+mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
 
 const getWeb3 = async () => {
     return new Promise(async (resolve, reject) => {

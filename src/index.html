@@ -30,9 +30,10 @@
                 </button>
               </ul>
                 <div class="flex flex-1 sm:hidden justify-end">
-                  <button>
-                  <i id="dropdownButton" class=" text-2xl fas fa-bars"></i></button>
-                  <div class="bg-white/50 rounded-lg mt-24 " >
+                  <!--hamburger menu-->
+                  <button class="relative mobile-menu-button"> <i class="text-2xl fas fa-bars"></i></button>
+                  <!--mobile menu-->
+                  <div class="absolute top-0 mobile-menu hidden bg-white/90 rounded-lg mt-24 z-10 " >
                     <ul id="dropdownMenu" class="mt-5 text-xl">
                       <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#home" >Home </a></li>
                       <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#about"> About </a></li>
@@ -136,7 +137,7 @@
         <h1 class="text-5xl font-extrabold text-center text-white">Team</h1>
        </div>
        <!--Cards-->
-       <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-lg mt-16 "> 
+       <div class="container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-screen-lg mt-16 "> 
           <!--Card1-->
           <div class="flex flex-col rounded-md shadow-md">
             <div class="p-6 flex flex-col items-center">
