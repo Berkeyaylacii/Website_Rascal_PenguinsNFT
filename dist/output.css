@@ -686,6 +686,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .bg-white\/90 {
   background-color: rgb(255 255 255 / 0.9);
 }
@@ -892,6 +896,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1009,72 +1019,16 @@ html {
     right: 50%;
   }
 
-  .sm\:bottom-1\/3 {
-    bottom: 33.333333%;
+  .sm\:bottom-\[710px\] {
+    bottom: 710px;
   }
 
   .sm\:left-1\/2 {
     left: 50%;
   }
 
-  .sm\:bottom-96 {
-    bottom: 24rem;
-  }
-
-  .sm\:bottom-24 {
-    bottom: 6rem;
-  }
-
-  .sm\:-bottom-16 {
-    bottom: -4rem;
-  }
-
-  .sm\:bottom-\[190px\] {
-    bottom: 190px;
-  }
-
-  .sm\:bottom-\[300px\] {
-    bottom: 300px;
-  }
-
-  .sm\:bottom-\[350px\] {
-    bottom: 350px;
-  }
-
-  .sm\:bottom-\[600px\] {
-    bottom: 600px;
-  }
-
-  .sm\:bottom-\[900px\] {
-    bottom: 900px;
-  }
-
-  .sm\:bottom-\[700px\] {
-    bottom: 700px;
-  }
-
-  .sm\:bottom-\[750px\] {
-    bottom: 750px;
-  }
-
-  .sm\:bottom-\[710px\] {
-    bottom: 710px;
-  }
-
   .sm\:bottom-\[500px\] {
     bottom: 500px;
-  }
-
-  .sm\:bottom-48 {
-    bottom: 12rem;
-  }
-
-  .sm\:bottom-52 {
-    bottom: 13rem;
-  }
-
-  .sm\:bottom-56 {
-    bottom: 14rem;
   }
 
   .sm\:bottom-60 {
