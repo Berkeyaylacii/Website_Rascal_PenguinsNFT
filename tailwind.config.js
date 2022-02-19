@@ -11,6 +11,8 @@ module.exports = {
         "bookmark-blue": "#242A45",
         "bookmark-grey": "#9194A2",
         "bookmark-white": "#f7f7f7",
+        gridColor: '#8CD6EB',
+        homeColor: '#546CA1',
       },
     },
     fontFamily: {
@@ -29,7 +31,7 @@ module.exports = {
     screens: {
       'sm': '880px',
 
-      'md': '768px',
+      'md': '900px',
 
       'lg': '1024px',
 
