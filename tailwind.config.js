@@ -18,6 +18,7 @@ module.exports = {
     fontFamily: {
       Antonio: "'Antonio', sans-serif",
       Yanone:  "'Yanone Kaffeesatz', sans-serif",
+      Lemonada: "'Lemonada', cursive",
     },
     container: {
         center: true,

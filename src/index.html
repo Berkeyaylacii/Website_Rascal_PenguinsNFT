@@ -11,15 +11,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
-<body class="font-Yanone " style="background: url(./imgs/bgg.png); background-size: 100% 100%; background-repeat: no-repeat" >
+<body class="font-Yanone" style="background: url(./imgs/backgg.png); background-size: 100% 100%; background-repeat: no-repeat" >
    <!-- Header -->
    <header>
         <nav class ="container flex items-center py-4 mt-4 sm:mt-6">
-            <div class="py-1 sm:mr-6"> <img src="imgs/headerlogo.png" class="" alt=""/> </div>
-              <ul class="hidden sm:flex flex-1 justify-end items-center gap-10 text-bookmark-blue uppercase text-2xl">
+            <div class="py-1 sm:mr-6"> <img src="imgs/headerlogo.svg" class="" alt=""/> </div>
+              <ul class="hidden sm:flex flex-1 justify-end items-center gap-10 text-bookmark-blue uppercase text-[26px]">
                 <li class="cursor-pointer"> <a href="#home" >Home </a></li>
                 <li class="cursor-pointer"> <a href="#about"> About </a></li>
                 <li class="cursor-pointer"> <a href="#roadmap" >Roadmap</a></li>
@@ -33,11 +35,11 @@
                   <!--hamburger menu-->
                   <button class="relative mobile-menu-button"> <i class="text-2xl fas fa-bars"></i></button>
                   <!--mobile menu-->
-                  <div class="absolute top-0 mobile-menu hidden bg-white/90 rounded-lg mt-24 z-10 " >
+                  <div class="absolute top-0 mobile-menu hidden bg-white/90 rounded-lg mt-24 z-30 " >
                     <ul id="dropdownMenu" class="mt-5 text-xl">
                       <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#home" >Home </a></li>
                       <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#about"> About </a></li>
-                      <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="/src/imgs/iceberg.svg" >Roadmap</a></li>
+                      <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#roadmap"  >Roadmap</a></li>
                       <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#team" >Team</a></li>
                       <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> <a href="#faq">FAQ</a></li>
                       <li class="block px-4 py-2 text-gray-800 hover:bg-indigo-600 hover:text-white"> Connect Wallet</li>
@@ -52,25 +54,27 @@
      <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-14  py-10 ">
         <!-- Content-->
         <div class="flex flex-1 flex-col items-center lg:items-start " data-aos="fade-right" >
-            <img class="mb-8"src="imgs/rascalpenguinstext.svg">
-            <p class="bg-homeColor/50 rounded-md px-3 py-2 text-white text-2xl text-center lg:text-left mb-6">
-              5000 randomly generated penguins living in a South Poleverse. They created for one thing. To eat and survive. The ones with the better luck will be able to live.
+            <img class="mb-8 ml-3"src="imgs/rascalpenguinstext.svg">
+            <p class="font-Lemonada  rounded-md px-3 py-2 text-black text-[16px] font-medium text-center lg:text-left mb-12">
+              5000 randomly generated penguins living in a Ethereum Blockchain. They were created for one thing, eat and survive. The riper you are, the more advantage you get.
             </p>
-            <div class="">
+
+            <div class="bg-homeColor/20 px-2 py-2 rounded-md shadow-lg" hidden>
             <!--Wallet info-->
             <section id="wallet_info" hidden>
-              <h1 class="mb-3 text-2xl">Address: <span id="wallet_address"></span></h1>
-              <h1 class="mb-3 text-2xl">Balance: <span id="wallet_balance"></span></h1>
+              <h1 class="font-Lemonada mb-3 text-[16px] text-white">Address: <span id="wallet_address"></span></h1>
+              <h1 class="font-Lemonada mb-3 text-[16px] text-white">Balance: <span id="wallet_balance"></span></h1>
             </section>
             <!--Mint info and button-->
-            <h1 class="mb-3 text-2xl">Total Minted: 0 / 5000</h1>
-            <h1 class="mb-3 text-2xl">Mint Price: 0.03</h1>
-            <div class="flex  flex-wrap items-center justify-center">
+            <h1 class="font-Lemonada mb-3 text-white text-[16px]">Total Minted: 0 / 5000</h1>
+            <h1 class="font-Lemonada mb-3 text-white text-[16px]">Mint Price: 0.03</h1>
+            <div class="flex  flex-wrap items-center justify-center ">
               <button type="button" class="hover:text-black">
                 <img src="./imgs/mintbutton 1.svg">
               </button>
             </div> 
             </div>
+
         </div>
         <!--Gif-->
         <div class="flex justify-center flex-1  mb-10 md:mb-16 lg:mb-0 z-10 relative" data-aos="fade-left" > 
@@ -78,7 +82,7 @@
         </div>
      </div>
      <!--socials-->
-    <div class="justify-center flex mt-14" >
+    <div class="justify-center flex mt-0 " >
        <img class="mx-2.5" src="imgs/twitter.png">
        <img class="mx-2.5" src="imgs/discord.png">
     </div>
@@ -90,40 +94,41 @@
      
     <div class="relative sm:w-3/4 lg:w-5/12 mx-auto px-2" >
     
-    <div class="relative mx-auto text-center w-54 lg:w-full mb-0 z-10 " data-aos="fade-up">
-      <h1 class="text-5xl text-center font-extrabold mb-1" >What is Rascal Penguins?</h2>
-      <p class="bg-blue-500/20 sm:bg-transparent rounded-md px-3 py-2 sm:px-0 sm:py-0 text-white sm:text-black text-2xl">5010 randomly generated penguins living in a South Poleverse. They created for one thing. To eat and survive. They created for one thing. To eat and survive.They created for one thing. To eat and survive.The ones with the better luck will be able to live.</p>
+    <div class="relative mx-auto text-center w-54 lg:w-full mt-28 mb-0 z-10 " data-aos="fade-up">
+      <h1 class="font-Lemonada text-4xl text-center font-bold mb-4" >What is Rascal Penguins?</h2>
+      <p class="font-Lemonada text-[18px] bg-homeColor/60 sm:bg-transparent rounded-md px-3 py-2 sm:px-0 sm:py-0 mx-2 text-white sm:text-black "> 
+        Rascal Penguins is a collection of 5000 unique penguin themed gaming NFT project, living in the Ethereum Blockchain. Our goal is to become a known figure in the NFT space and become a active community with granting privileges to it's owners.<br> <br>Hop in our discord to access custom discord games and activities!  </p>
     </div>
     
     <!--Iceberg-->
-    <div class="sm:flex sm:relative absolute items-center justify-center w-3/4 sm:w-full mx-auto left-0 right-0 mt-2 sm:mt-0">
+    <div id="roadmap" class="sm:flex sm:relative absolute items-center justify-center w-3/4 sm:w-full mx-auto left-0 right-0 mt-2 sm:mt-0">
       <img class="floating mb-40" src="imgs/iceberg.svg"> 
     </div>
 
 
-    <div data-aos="fade-right"  class="relative sm:absolute sm:bottom-1/2 right-auto sm:right-1/2 my-10 mt-72 w-54 sm:w-80 text-2xl sm:bg-transparent bg-blue-600/20 px-2 py-2 rounded-md text-white">
-      <h1 class="text-5xl text-sky-100 text-center  font-extrabold">Launch</h1>
-      <p class="font-normal text-center sm:text-left">Details about our project will be announced from socials. Early adaptors will be rewarded with OG Role. They will have special privileges. </p>
+    <div data-aos="fade-right"  class="relative sm:absolute sm:bottom-[900px] right-auto sm:right-1/2 my-10 mt-72 w-54 sm:w-96 text-2xl sm:bg-transparent bg-homeColor/40 px-2 py-2 rounded-md text-white mx-2">
+      <h1 class="font-Lemonada text-3xl text-sky-100 text-center sm:text-left font-bold mb-2">Launch</h1>
+      <p class="font-Lemonada text-center sm:text-left text-[20px]">Details about our project will be announced from socials. Early adaptors will be rewarded with OG Role. They will have special privileges. </p>
     </div>
 
-    <div data-aos="fade-left"  class="relative sm:absolute sm:bottom-[710px] left-auto sm:left-1/2 my-10 w-54 sm:w-80 text-2xl sm:bg-transparent bg-blue-600/25 px-2 py-2 rounded-md text-white">
-        <h1 class="text-4xl text-center text-sky-200 font-extrabold" >%25</h1>
-        <p class="font-normal text-center sm:text-left">In-discord games with rewards will took place. Also there will be special events.</p>
+    <div data-aos="fade-left"  class="relative sm:absolute sm:bottom-[720px] left-auto sm:left-1/2 my-10 w-54 sm:w-96 text-2xl sm:bg-transparent bg-homeColor/40 px-2 py-2 rounded-md text-white mx-2">
+        <h1 class="font-Lemonada text-3xl sm:text-right text-center text-sky-200 font-bold mb-2" >%25</h1>
+        <p class="font-Lemonada text-center sm:text-right text-[19px]">In-discord custom games and events with rewards will took place. Don't hold back yourself to participate in these events!</p>
     </div>
 
-    <div data-aos="fade-right"  class="relative sm:absolute sm:bottom-[500px] right-auto sm:right-1/2 my-10 w-54 sm:w-80 text-2xl sm:bg-transparent bg-blue-700/25 px-2 py-2 rounded-md text-white">
-      <h1 class="text-3xl text-center text-sky-300 font-extrabold">%50</h1>
-      <p class="text-lg font-normal text-center sm:text-left">Sneak-peaks about game will be announced. You can access game with your own nft.  </p>
+    <div data-aos="fade-right"  class="relative sm:absolute sm:bottom-[500px] right-auto sm:right-1/2 my-10 w-54 sm:w-96 text-2xl sm:bg-transparent bg-homeColor/40 px-2 py-2 rounded-md text-white mx-2">
+      <h1 class="font-Lemonada text-3xl sm:text-left text-center text-sky-300 font-bold mb-2">%50</h1>
+      <p class="font-Lemonada text-center sm:text-left text-[19px]">Sneak-peaks about our Play to Earn game will be announced. Community members will vote for the designs of in-game accessorries they like!</p>
     </div>
 
-    <div data-aos="fade-left" class="relative sm:absolute sm:bottom-60 left-auto sm:left-1/2 my-10 w-54 sm:w-80 text-2xl sm:bg-transparent bg-blue-700/25 px-2 py-2 rounded-md text-white">
-      <h1 class="text-2xl text-center text-sky-400 font-extrabold">Sold out</h1>
-      <p class="text-lg font-normal text-center sm:text-left">Our designer Tugberk will reach 20 lucky OG role owners and they have a chance to rebuild their NFTs. Make one special trait that describes you! Also we will create community wallet and fund it with %20 of primary sale value.</p>
+    <div data-aos="fade-left" class="relative sm:absolute sm:bottom-56 left-auto sm:left-1/2 my-10 w-54 sm:w-96 text-2xl sm:bg-transparent bg-homeColor/50 px-2 py-2 rounded-md text-white mx-2">
+      <h1 class="font-Lemonada text-2xl sm:text-right text-center text-sky-400 font-bold mb-2">Sold out</h1>
+      <p class="font-Lemonada text-center sm:text-right text-[18px]">Our artist will reach to 20 lucky OG role owners and they have a chance to rebuild their NFTs. Make one special trait that describes you! Also community wallet will be created and funded with %20 of primary sale value.</p>
     </div>
 
-    <div data-aos="fade-right"  class="relative sm:absolute sm:-bottom-2 left-auto sm:right-1/2 my-10 w-54 sm:w-80 text-xl sm:bg-transparent bg-blue-700/30 px-2 py-2 rounded-md text-white">
-      <h1 class="text-2xl text-center text-sky-400 font-extrabold">Beyond</h1>
-      <p class="text-lg font-normal text-center">Our Play to Earn game will be accessable. Rascal Penguins NFT holders can play the game. They can earn token from the game and spend their tokens on varius things. </p>
+    <div data-aos="fade-right"  class="relative sm:absolute sm:bottom-0 left-auto sm:right-1/2 my-10 w-54 sm:w-96 text-xl sm:bg-transparent bg-homeColor/50 px-2 py-2 rounded-md text-white mx-2">
+      <h1 class="font-Lemonada text-2xl sm:text-left text-center text-sky-400 font-bold mb-2">Beyond</h1>
+      <p class="font-Lemonada text-center sm:text-left text-[17px]">Our Play to Earn game will be published. Only Rascal Penguins NFT holders can play the game. They can earn token as a reward from the game and spend their tokens on varius things.(in-game accessories, merch etc.) </p>
     </div>
    
   </div>
@@ -136,45 +141,45 @@
       <div >
       <!--Heading-->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 data-aos="fade-up" class="text-5xl font-extrabold text-center text-white mb-8">Team</h1>
+        <h1 data-aos="fade-up" class="font-Lemonada text-4xl font-bold text-center text-sky-600 mb-8 mt-10">Team</h1>
        </div>
        <!--Cards-->
-       <div class="container rounded-lg  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 max-w-screen-lg "> 
+       <div class="container rounded-lg  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-screen-lg "> 
           <!--Card1-->
-          <div data-aos="fade-right"  class="flex flex-col rounded-md shadow-md bg-black/50">
+          <div data-aos="fade-right"  class="flex flex-col rounded-md shadow-md bg-black/70">
             <div class="p-6 flex flex-col items-center">
               <div class="relative">
                 <img class="block w-full shadow-2xl" src="./imgs/lympidcard.svg" alt="" >
-                  <div class="absolute top-0 left-0 w-full h-full  flex flex-col items-center justify-center opacity-0 transition-all duration-400 hover:opacity-100 rounded-lg">
-                    <div id="imagetitle" class="block text-3xl font-semibold">Lympid</div>
-                    <p class="text-md font-light mt-1 text-center"> Developer  </p>
-                    <p class="text-xl font-medium mt-1">Twitter: @lympid1</p>
+                  <div class="absolute top-0 left-0 w-full h-full  flex flex-col items-center justify-center opacity-0 transition-all duration-400 hover:opacity-100 hover:backdrop-blur rounded-lg">
+                    <div id="imagetitle" class="block text-4xl font-semibold">Lympid</div>
+                    <p class="text-xl font-light mt-1 text-center"> Developer/Founder  </p>
+                    <p class="text-xl font-medium mt-1">Twitter: <a target="_blank" href="https://twitter.com/lympid1">@lympid1</a> </p>
                 </div>  
               </div>
             </div>
           </div>
           <!--Card2-->
-          <div data-aos="fade-up" class="flex flex-col rounded-md shadow-md bg-black/50">
+          <div data-aos="fade-up" class="flex flex-col rounded-md shadow-md bg-black/70">
             <div class="p-6 flex flex-col items-center">
               <div class="relative">
                  <img class="block w-full" src="./imgs/osmanccard.svg" alt="" >
-                    <div class="absolute top-0 left-0 w-full h-full  flex flex-col items-center justify-center opacity-0 transition-all duration-400 hover:opacity-100 rounded-lg">
-                      <div id="imagetitle" class="block text-3xl font-semibold">OsmanC</div>
-                      <p class="text-md font-light mt-1 text-center"> Developer  </p>
-                      <p class="text-xl font-medium mt-1">Twitter: @osmanc</p>
+                    <div class="absolute top-0 left-0 w-full h-full  flex flex-col items-center justify-center opacity-0 transition-all duration-400 hover:opacity-100 hover:backdrop-blur rounded-lg">
+                      <div id="imagetitle" class="block text-4xl font-semibold">OsmanC</div>
+                      <p class="text-xl font-light mt-1 text-center"> Developer </p>
+                      <p class="text-xl font-medium mt-1">Twitter: <a target="_blank" href="https://twitter.com/iamcancinar">@iamcancinar </a> </p>
                 </div>  
               </div>
             </div>
           </div>
         <!--Card3-->
-        <div data-aos="fade-left" class="flex flex-col rounded-md shadow-md bg-black/50">
+        <div data-aos="fade-left" class="flex flex-col rounded-md shadow-md bg-black/70">
           <div class="p-6 flex flex-col items-center">
             <div class="relative">
                <img class="block w-full rounded-xl" src="./imgs/tugberkcard.svg" alt="" >
-                  <div class="absolute top-0 left-0 w-full h-full  flex flex-col items-center justify-center opacity-0 transition-all duration-400 hover:opacity-100 rounded-lg">
-                    <div id="imagetitle" class="block text-3xl font-semibold">Tugberk</div>
-                    <p class="text-md font-light mt-1 text-center"> Designer  </p>
-                    <p class="text-xl font-medium mt-1 text-center"> Twitter: @tugberk  </p>
+                  <div class="absolute top-0 left-0 w-full h-full  flex flex-col items-center justify-center opacity-0 transition-all duration-400 hover:opacity-100 hover:backdrop-blur rounded-lg">
+                    <div id="imagetitle" class="block text-4xl font-semibold">Tugberk</div>
+                    <p class="text-xl font-light mt-1 text-center"> Artist  </p>
+                    <p class="text-xl font-medium mt-1 text-center"> Instagram: <a target="_blank" href="https://www.instagram.com/tug9berk/">@tugberk</a>   </p>
               </div>  
             </div>
           </div>
@@ -186,47 +191,48 @@
 
     <!--FAQ-->
     <section id="faq" class="relative py-20 ">
-      <div class="container sm:w-3/4 lg:w-5/12 mx-auto px-2 py-10 rounded-xl" data-aos="fade-up">
+      <div class=" container sm:w-3/4 lg:w-5/12 mx-auto px-2 py-10 rounded-xl" data-aos="fade-up">
         <!--Heading-->
-        <h1 class="text-5xl text-center font-extrabold text-white mb-8">FAQ</h1>
+        <h1 class="font-Lemonada text-4xl font-bold text-center text-sky-600 mb-8">FAQ</h1>
         <!--Q1-->
-        <div class="mb-10">
-          <div class="mb-6">
-            <h1 class="text-3xl text-white">What makes Rascal Penguins different?</h2>
-            <p class="text-2xl text-white">-Rascal penguins aims to be a symbolic animal with it's unique art in the NFT space. </p>
+
+          <div class="mb-7 ml-2">
+            <h1 class="font-Lemonada text-2xl text-white mb-1">What makes Rascal Penguins different?</h2>
+            <p class="font-Lemonada font-light text-gray-300">- Rascal penguins aims to become an iconic penguin NFT with it's unique art in the NFT space. Since we are portraiting penguins, with the power of our community we would like to increase the consciousness about impacts of global warming.  </p>
           </div>
-        
+
+            <!--Q5-->
+       <div class="mb-7 ml-2">
+        <h1 class="font-Lemonada text-2xl text-white mb-1">What are the Benefits of owning a Rascal Penguins NFT?</h2>
+        <p class="font-Lemonada font-light text-gray-300">- First of all, till the minting everyone can access and play the games in our discord channel. That means, everybody can get some rewards! When minting comes, NFT holders will have higher chances of getting the rewards. Also our Play to Earn game will be only available for NFT holders.</p>
+      </div>
+
         <!--Q2-->
-          <div class="mb-6">
-            <h1 class="text-3xl text-white">What is the the total supply?</h2>
-            <p class="text-2xl text-white">-Total supply will be 7000.</p>
+          <div class="mb-7 ml-2">
+            <h1 class="font-Lemonada text-2xl text-white mb-1">What is the the total supply?</h2>
+            <p class="font-Lemonada font-light text-gray-300">- Total supply will be 5000.</p>
           </div>
 
        <!--Q3-->
-         <div class="mb-6">
-          <h1 class="text-3xl text-white">What is the mint date and price?</h2>
-          <p class="text-white">-Mint date and price will be announced via socials.</p>
+         <div class="mb-7 ml-2">
+          <h1 class="font-Lemonada text-2xl text-white mb-1">What is the mint date and price?</h2>
+          <p class="font-Lemonada font-light text-gray-300">- Mint date and price will be announced via socials.</p>
         </div>
      
        <!--Q4-->
-       <div class="mb-6">
-        <h1 class="text-3xl text-white">What is the mint price?</h2>
-        <p class="text-white">-Mint price will be 0.03 ethereum.</p>
+       <div class="mb-7 ml-2">
+        <h1 class="font-Lemonada text-2xl text-white mb-1">Where Can I get the Rascal Penguins NFT?</h2>
+        <p class="font-Lemonada font-light text-gray-300">- You can mint through our website and for the secondaries Opensea, LooksRare will be options.</p>
       </div>
 
-       <!--Q5-->
-       <div class="mb-6">
-        <h1 class="text-3xl text-white">What is the mint price?</h2>
-        <p class="text-white">-Mint price will be 0.03 ethereum.</p>
-      </div>
+   
 
     
     </section>
 
-    <footer class="bg-white/20" >
-      <div class="container text-center items-center py-1">
-
-          <p class= "text-sm text-gray-500">Copyright © Rascal Penguins 2022 - All Rights Reserved.</p>
+    <footer class="bg-black" >
+      <div class="container text-center items-center py-[6px] px-1">
+          <p class= "text-[14px] text-gray-400">Copyright © Rascal Penguins 2022 - All Rights Reserved.</p>
     </footer>
 
 

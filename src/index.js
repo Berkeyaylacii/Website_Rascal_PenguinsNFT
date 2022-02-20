@@ -1,9 +1,14 @@
 const mobileMenuBtn = document.querySelector("button.mobile-menu-button");
 const mobileMenu = document.querySelector(".mobile-menu");
 
+const connectButton = document.getElementById("connectButton");
 
 mobileMenuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
+});
+
+connectButton.addEventListener("click", () => {
+    window.alert("Will be active soon...")
 });
 
 const getWeb3 = async () => {
@@ -20,7 +25,7 @@ const getWeb3 = async () => {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("connectButton").addEventListener("click", async ({ target }) => {
+    document.getElementById("").addEventListener("click", async ({ target }) => {
         const web3 = await getWeb3()
         const walletAddress = await web3.eth.requestAccounts()
         const walletBalanceInWei = await web3.eth.getBalance(walletAddress[0])
