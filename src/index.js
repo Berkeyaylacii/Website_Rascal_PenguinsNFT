@@ -38,3 +38,15 @@ window.addEventListener('DOMContentLoaded', () => {
         document.getElementById("wallet_info").removeAttribute("hidden");
     })
 })
+
+
+windows.addEventListener('DOMContentLoaded', () =>{
+    const overlay = document.querySelector('#overlay')
+    const fishingGameText = document.querySelector('#fishingGamePopup')
+
+    fishingGameText.addEventListener('click', () =>{
+        overlay.classList.remove('hidden')
+        overlay.classList.add('flex')
+    })
+    
+})
