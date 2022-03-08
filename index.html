@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+  
   <link href="/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--animation on scroll-->
@@ -108,21 +110,9 @@
 
     <div data-aos="fade-right"  class="relative sm:absolute sm:bottom-[900px] right-auto sm:right-1/2 my-10 mt-72 w-54 sm:w-96 text-2xl sm:bg-transparent bg-homeColor/40 px-2 py-2 rounded-md text-white mx-2">
       <h1 class="font-Lemonada text-3xl text-sky-100 text-center sm:text-left font-bold mb-2">Launch</h1>
-      <p class="font-Lemonada text-center sm:text-left text-[20px]">200 OG Role will be given to early adaptors. They will have special privileges.Our Fishing Game will be available for everyone.<span id="fishingGamePopup" class="underline hover:text-blue-100">(What is Fishing Game?)</span> </p>
+      <p class="font-Lemonada text-center sm:text-left text-[20px]">200 OG Role will be given to early adaptors. They will have special privileges. Our Fishing Game will be available for everyone. <a id="fishingGamePopup" class="hover:text-blue-200 hover:underline cursor-pointer">(What is Fishing Game?)</a> </p>
     </div>
-    <!--Pop for fishing game description-->
-    <div id="overlay" class="bg-white bg-opacity-50 absolute inset-0 hidden justify-center items-center">
-      <div class="bg-gray-200 max-w-sm py-4 px-5 rounded shadow-xl"> 
-        <div>
-          <h4 class="text-lg font-semibold">What is Fishing Game?</h4>
-        </div>
-        <div class="mt-2">
-          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-        </div>
-   
-      </div>
 
-    </div>
 
     <div data-aos="fade-left"  class="relative sm:absolute sm:bottom-[720px] left-auto sm:left-1/2 my-10 w-54 sm:w-96 text-2xl sm:bg-transparent bg-homeColor/40 px-2 py-2 rounded-md text-white mx-2">
         <h1 class="font-Lemonada text-3xl sm:text-right text-center text-sky-200 font-bold mb-2" >Stage 1</h1>
@@ -145,6 +135,27 @@
       <h1 class="font-Lemonada text-2xl sm:text-left text-center text-sky-400 font-bold mb-2">Beyond</h1>
       <p class="font-Lemonada text-center sm:text-left text-[17px]">P2E game with our custom Token $RPT, Merch and more ! </p>
     </div>
+
+        <!--Pop for fishing game description-->
+        <div id="overlay" class="poshidden absolute inset-0 justify-center items-center">
+          <div class="relative bg-custom max-w-md sm:max-w-2xl py-6 px-6 sm:px-8 mx-5 rounded-lg shadow-2xl"> 
+            <div class="flex justify-between items-center">
+              <h4 class="font-Lemonada text-3xl font-bold text-white">What is Fishing Game?</h4>
+
+            </div>
+            <img class="cursor-pointer absolute right-3 top-6" id="closeButton" src="src/imgs/back.png">
+            <div class="font-Lemonada  mt-2 text-lg sm:text-xl text-gray-200">
+              <p>-In the face of harsh cold, penguins must eat to survive. Try your hand at fishing to catch many kinds of fishes. <br>-You never know what to catch! A tuna, a lion fish or a something more special!</p>
+            </div>
+
+          <div class="mt-2 mb-2">
+
+          <img src="src/imgs/fishingrascal.png" class="mb-2 mx-auto w-60 sm:w-96">
+      
+          </div>
+          
+          </div>
+        </div>
    
   </div>
 

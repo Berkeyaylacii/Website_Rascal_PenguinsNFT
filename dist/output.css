@@ -1433,3 +1433,18 @@ html, body
     text-align: left;
   }
 }
+
+
+.underlined:hover {
+  color:#bfdbfe;
+  cursor:pointer
+}
+
+.bg-custom{
+  background-color:#07447B;
+  opacity:0.98;
+}
+
+.poshidden{
+  display: none;
+}

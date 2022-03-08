@@ -11,6 +11,27 @@ connectButton.addEventListener("click", () => {
     window.alert("Will be active soon...")
 });
 
+
+const overlay = document.getElementById('overlay')
+const fishingGameText = document.getElementById('fishingGamePopup')
+const closeButton = document.getElementById('closeButton')
+
+
+window.onload = function(){
+    fishingGameText.addEventListener('click', function (){
+        if(overlay.style.display ==="none"){
+            overlay.style.display ="flex";
+        } else {
+            overlay.style.display ="none";
+        }
+    })
+
+    closeButton.addEventListener('click', () =>{
+        overlay.style.display ="none";
+    })
+}   
+
+
 const getWeb3 = async () => {
     return new Promise(async (resolve, reject) => {
         const web3 = new Web3(window.ethereum)
@@ -40,13 +61,3 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 
-windows.addEventListener('DOMContentLoaded', () =>{
-    const overlay = document.querySelector('#overlay')
-    const fishingGameText = document.querySelector('#fishingGamePopup')
-
-    fishingGameText.addEventListener('click', () =>{
-        overlay.classList.remove('hidden')
-        overlay.classList.add('flex')
-    })
-    
-})
