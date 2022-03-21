@@ -1246,6 +1246,11 @@ html, body
     bottom: 500px;
   }
 
+  
+  .sm\:bottom-\[208px\] {
+    bottom: 208px;
+  }
+
   .sm\:bottom-60 {
     bottom: 15rem;
   }
